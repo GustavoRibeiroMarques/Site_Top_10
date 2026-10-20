@@ -1,0 +1,139 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    background: linear-gradient(to bottom, #040432, #210231);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+    margin: 0;
+
+    color: #222222;
+}
+
+header {
+    background-color: #091a38;
+
+    color: white;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+main {
+    width: 90%;
+
+    margin: 30px auto;
+}
+
+.ranking {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+@media (max-width: 900px) {
+
+    .ranking {
+
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .ranking {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+.card {
+    background-color: #081A41;
+
+    color: white;
+
+    border-radius: 12px;
+
+    padding: 20px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.imagem {
+    height: 150px;
+
+    background-color: #bfdbfe;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    font-weight: bold;
+
+    border-radius: 8px;
+}
+
+.conteudo {
+    padding-top: 15px;
+}
+
+.posicao {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    font-size: 14px;
+}
+
+.card h2 {
+    margin-top: 8px;
+
+    margin-bottom: 8px;
+}
+
+.card a {
+    text-decoration: none;
+
+    color: white;
+
+    background-color: #0a2a70;
+
+    padding: 8px 14px;
+
+    border-radius: 6px;
+
+    display: inline-block;
+}
+
+
+.card a:hover {
+    background-color: #1e40af;
+}
+
+
+footer {
+    background-color: #091A38;
+
+    color: white;
+
+    padding: 20px;
+
+    text-align: center;
+
+    margin-top: 40px;
+
+}
